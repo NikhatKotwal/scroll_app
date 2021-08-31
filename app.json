@@ -1,7 +1,12 @@
 {
   "expo": {
-    "name": "my-scroll-app",
-    "slug": "my-scroll-app",
+    "name": "Users",
+    "slug": "users-slug",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -10,6 +15,10 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "android": {
+      "package": "com.users.users",
+      "versionCode": 1
+    },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -17,16 +26,9 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "supportsTablet": true,
+      "bundleIdentifier": "com.users.users",
+      "buildNumber": "1.0.0"
     }
   }
 }
